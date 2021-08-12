@@ -13,5 +13,11 @@ module.exports =  {
     },
     devServer: {
         historyApiFallback: true
+    },
+    module: {
+        rules: [{
+            test: /\.jsx?/,
+            loader: 'babel-loader'
+        }]
     }
 }
